@@ -1,0 +1,197 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "lockTime",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "depositedAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentBalanceOfATokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getMyEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getUserData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "v",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sendKajmakToOwner",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"getCurrentBalanceOfATokens()": {
+					"notice": "Returns current balance of AETH tokens for this contract*"
+				},
+				"getMyEther()": {
+					"notice": "A function that returns ETH from AAVE Lending Pool to the user and distributes a portion  to other usersif the user has withdrawn ETH before a defined time period*"
+				},
+				"getUserData()": {
+					"notice": "Function that returns deposited amount of ETH for the user*"
+				},
+				"sendEther()": {
+					"notice": "Function that sends ETH to AAVE V2 Lending Pool *"
+				},
+				"sendKajmakToOwner()": {
+					"notice": "A function that sends passive income to the owner of the contract. manager is the owner*"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StrongHands.sol": "StrongHands"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ERC20.sol": {
+			"keccak256": "0xd5385404fd9f537884fd58a9af6d5de6f2c3e456f7f2ccfc736786b83d41efe6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5ab129ea7f9535d2efedccd91c963f22953eeb3a95a8c497dc532ce506f80843",
+				"dweb:/ipfs/QmXucCSBURQNLsqKEKrRPySnPru2SGx5H11TuWC71HhzpK"
+			]
+		},
+		"contracts/StrongHands.sol": {
+			"keccak256": "0xe0c7e49b2dc2aaef3a859d5cc1292b86c7817e87cf6e1c9b3673c8ba35af9de2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f092b043d85b0fc5c93b3b4730ced7aaeb8c76f101384f80a3fceefde92ba17f",
+				"dweb:/ipfs/QmYCRPk9xA4oYectHXwcqWhKMXbF5mnYjJiMWAZ3q8AswJ"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/dependencies/openzeppelin/contracts/IERC20.sol": {
+			"keccak256": "0x262369e206d62d5ee68b397937b68c97ff28fd939924d5d29e18ba9bb808a910",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://66cef1980a58f42e84e323c803e69b31f47e4d5ceaee4c26311f5fb6dd009a69",
+				"dweb:/ipfs/QmdSbJ4cR1KwMGcmzewBdzjWsGuLMRJqxD3zonJeivDknD"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/interfaces/IAToken.sol": {
+			"keccak256": "0xee4945f62d69170ec88199627ef72183c7041e06742936f96ebc5ea358635dd4",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://ff84aac62a5577747801bbd5ec20155ebb834f9511fc363d517fa8de1cd5cb81",
+				"dweb:/ipfs/QmVAHsvc9rPThqCX9N3jKRQVBHgYjE6ZJ1hjm84BgxQjZy"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/interfaces/ILendingPool.sol": {
+			"keccak256": "0x4317aab800a42f977aca3cdfd8d5b6f13020febc15a955df0ef967fad29ddfd1",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://7a42a21607a436b318ecc8f89c706de8160bb2339a6d51f785f7b211140ef5ca",
+				"dweb:/ipfs/QmXzTRS5rzy3yFSGGfFaaWiyWNayXkzdTNuSMx7GPggSVy"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/interfaces/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0xd8d09ab923d429b8b27eafa7049d021393189e0c80b8f374084f77b201ea1073",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://9549c766e722380c52a51a6a76ffa9940ed7b33caa69de74bbe947cd47b417d3",
+				"dweb:/ipfs/Qmao6cZZ4XrJqaF2ErPL3LwoDtbc1LxXeztKThHSt96H1t"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/interfaces/IScaledBalanceToken.sol": {
+			"keccak256": "0x1c0007fd8eed6f7db52faee18dc962954667abc52b6f9b18692b7baba7b7c6a7",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://4ddf803cb1ee8816678afc08d67c5582242b5b8f72e86e4d81714b82fd691399",
+				"dweb:/ipfs/Qma9qV2X46K64fTpTF8wo8yM3D9uBdxDfoCi19u8nmrsR6"
+			]
+		},
+		"https://github.com/aave/protocol-v2/blob/ice/mainnet-deployment-03-12-2020/contracts/protocol/libraries/types/DataTypes.sol": {
+			"keccak256": "0x64512f0d56b4c8ec7af33836fe00ad547cd47d71ffdd9ca8a1f2b867da425fd3",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://0207d03b9e11cd8db58021f6b8153bef483477daf43607306769c16a8da204a8",
+				"dweb:/ipfs/QmfL33Rf1ZGUBVm6gcyEXKbZE3PzLuoGQR3d3CCfQhrcSk"
+			]
+		}
+	},
+	"version": 1
+}

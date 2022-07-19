@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/github/aave/protocol-v2/mainnet-deployment-03-12-2020/contracts/protocol/libraries/types/DataTypes.sol": "DataTypes"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/github/aave/protocol-v2/mainnet-deployment-03-12-2020/contracts/protocol/libraries/types/DataTypes.sol": {
+			"keccak256": "0x64512f0d56b4c8ec7af33836fe00ad547cd47d71ffdd9ca8a1f2b867da425fd3",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://0207d03b9e11cd8db58021f6b8153bef483477daf43607306769c16a8da204a8",
+				"dweb:/ipfs/QmfL33Rf1ZGUBVm6gcyEXKbZE3PzLuoGQR3d3CCfQhrcSk"
+			]
+		}
+	},
+	"version": 1
+}

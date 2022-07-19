@@ -1,0 +1,128 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "getScaledUserBalanceAndSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"name": "scaledBalanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "scaledTotalSupply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getScaledUserBalanceAndSupply(address)": {
+					"details": "Returns the scaled balance of the user and the scaled total supply.",
+					"params": {
+						"user": "The address of the user"
+					},
+					"returns": {
+						"_0": "The scaled balance of the user",
+						"_1": "The scaled balance and the scaled total supply*"
+					}
+				},
+				"scaledBalanceOf(address)": {
+					"details": "Returns the scaled balance of the user. The scaled balance is the sum of all the updated stored balance divided by the reserve's liquidity index at the moment of the update",
+					"params": {
+						"user": "The user whose balance is calculated"
+					},
+					"returns": {
+						"_0": "The scaled balance of the user*"
+					}
+				},
+				"scaledTotalSupply()": {
+					"details": "Returns the scaled total supply of the variable debt token. Represents sum(debt/index)",
+					"returns": {
+						"_0": "The scaled total supply*"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/github/aave/protocol-v2/mainnet-deployment-03-12-2020/contracts/interfaces/IScaledBalanceToken.sol": "IScaledBalanceToken"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/github/aave/protocol-v2/mainnet-deployment-03-12-2020/contracts/interfaces/IScaledBalanceToken.sol": {
+			"keccak256": "0x1c0007fd8eed6f7db52faee18dc962954667abc52b6f9b18692b7baba7b7c6a7",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://4ddf803cb1ee8816678afc08d67c5582242b5b8f72e86e4d81714b82fd691399",
+				"dweb:/ipfs/Qma9qV2X46K64fTpTF8wo8yM3D9uBdxDfoCi19u8nmrsR6"
+			]
+		}
+	},
+	"version": 1
+}
